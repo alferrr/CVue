@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: #2e90fb;
+  --gray: #717680;
+  --sky: #eff8ff;
+  --light: #fafafa;
+
+  --headings: "Poppins", sans-serif;
+  --body: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  background: white;
+}
+
+h1 {
+  font-family: var(--headings);
+}
+
+button {
+  cursor: pointer;
+}
+
+.pill {
+  padding: 5px 14px;
+
+  border: 1px solid rgba(0, 0, 0, 0.252);
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 14px;
+  background: rgba(172, 172, 172, 0.105);
+
+  p {
+    background: linear-gradient(to right, var(--blue), var(--blue), black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.338);
+
+  background: white;
+
+  z-index: 99;
+
+  position: sticky;
+  top: 0;
+
+  h1 {
+    color: var(--blue);
+    font-family: var(--headings);
+  }
+  nav {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: var(--gray);
+      transition: 0.3s ease;
+      padding: 12px 1.2rem;
+      border-radius: 100px;
+      font-weight: 300;
+
+      &:hover {
+        background: rgba(183, 191, 255, 0.135);
+        color: black;
+      }
+    }
+  }
+
+  .cta {
+    gap: 1em;
+    a {
+      padding: 1rem 1.2rem;
+      border-radius: 100px;
+      background: var(--blue);
+      color: white;
+      font-size: 14px;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: rgb(0, 81, 255);
+        color: white;
+      }
+    }
+
+    .see {
+      background: transparent;
+      border: 1px solid var(--gray);
+      color: black;
+
+      &:hover {
+        background: transparent;
+        color: black;
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 90dvh;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80dvh;
+
+    gap: 2em;
+
+    h1 {
+      width: 65%;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: -1px;
+      font-family: var(--headings);
+      line-height: 4rem;
+
+      span {
+        color: gray;
+      }
+    }
+
+    h1 ~ p {
+      width: 50%;
+      font-weight: 200;
+      color: gray;
+      text-align: center;
+      font-size: 18px;
+      color: black;
+      margin-top: -1em;
+    }
+
+    nav {
+      display: flex;
+      list-style: none;
+      gap: 1em;
+      margin-top: 24px;
+
+      a {
+        text-decoration: none;
+        padding: 1rem 1.2rem;
+        background: var(--blue);
+        font-size: 14px;
+        border-radius: 100px;
+        color: white;
+      }
+
+      .view {
+        background: transparent;
+        color: black;
+        border: 1px solid rgba(128, 128, 128, 0.608);
+      }
+    }
+  }
+}
+
+.features {
+  position: relative;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  min-height: 50dvh;
+  background: var(--light);
+
+  header {
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-size: 2rem;
+  }
+
+  .blocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+    .block {
+      width: 30%;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 8px;
+      padding: 2rem;
+      background: white;
+      border-radius: 18px;
+      color: black;
+      border: 2px solid rgba(128, 128, 128, 0.087);
+
+      h1 {
+        font-size: 1.9rem;
+        background: linear-gradient(to right, var(--blue), pink);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+
+      p {
+        color: gray;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      .num {
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: grid;
+        place-items: center;
+      }
+
+      p {
+        letter-spacing: -1px;
+        color: gray;
+      }
+    }
+
+    .line {
+      font-size: 3rem;
+    }
+  }
+}
+
+.templates {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+  align-items: center;
+  width: 100vw;
+  gap: 3em;
+
+  .container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+
+    .template {
+      height: 65vh;
+      width: 30%;
+      border: 1px solid gray;
+      border-radius: 24px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    color: gray;
+    letter-spacing: -1px;
+  }
+
+  footer {
+    min-height: 30vh;
+    display: grid;
+    place-items: center;
+    background: var(--light);
+    width: 100%;
+  }
+}
+
+.last {
+  background: var(--sky);
+  position: relative;
+  min-height: 30vh;
+  padding: 3rem 7rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10em;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      font-weight: 600;
+      span {
+        color: gray;
+
+        span {
+          color: var(--blue);
+        }
+      }
+    }
+
+    h1 ~ p {
+      color: gray;
+      font-weight: 300;
+      width: 50%;
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: -1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 1rem 1.2rem;
+      background: var(--blue);
+      border-radius: 100px;
+      letter-spacing: -1px;
+    }
+  }
+
+  footer {
+    width: 100%;
+    min-height: 10vh;
+    border-top: 1px solid rgb(170, 170, 170);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+}

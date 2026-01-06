@@ -370,3 +370,100 @@ button {
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    gap: 0;
+    font-size: 12px;
+
+    nav {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .hero {
+    main {
+      h1 {
+        width: 90%;
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+
+      h1 ~ p {
+        width: 80%;
+      }
+    }
+  }
+
+  .features {
+    padding: 5rem 2rem;
+    header {
+      text-align: center;
+    }
+
+    .blocks {
+      flex-direction: column;
+
+      .block {
+        width: 100%;
+      }
+    }
+
+    footer {
+      flex-direction: column;
+      align-items: start;
+      gap: 3em;
+      .line {
+        display: none;
+      }
+    }
+  }
+
+  .templates {
+    padding: 2rem;
+
+    align-items: center;
+    .container {
+      flex-direction: column;
+      gap: 1em;
+
+      .template {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .last {
+    padding: 2rem 2rem 0rem;
+
+    main {
+      h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: center;
+      }
+
+      h1 ~ p {
+        width: 90%;
+      }
+    }
+
+    footer {
+      padding: 1rem 0;
+      min-height: auto;
+      font-size: 9px;
+      text-align: left;
+    }
+  }
+}

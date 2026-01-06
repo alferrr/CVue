@@ -370,3 +370,51 @@ button {
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .app {
+    flex-direction: column;
+    padding: 1rem;
+
+    .form {
+      width: 100%;
+
+      form {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      .array {
+        flex-direction: column-reverse;
+        align-items: start;
+
+        button {
+          gap: 1rem;
+          flex-direction: row-reverse;
+        }
+      }
+
+      .input {
+        width: 100% !important;
+      }
+
+      .container {
+        header {
+          align-items: center !important;
+          input {
+            font-size: 1.5rem !important;
+            width: 50%;
+          }
+
+          button {
+            font-size: 1.5rem !important;
+          }
+        }
+      }
+    }
+
+    .preview {
+      width: 100%;
+    }
+  }
+}

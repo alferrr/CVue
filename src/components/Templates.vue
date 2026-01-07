@@ -1,12 +1,28 @@
-<script setup></script>
+<script setup>
+import { useRouter } from "vue-router";
+const router = useRouter();
+
+const getStarted = () => {
+  router.push("/getstarted");
+};
+</script>
 
 <template>
   <section class="templates" id="temp">
     <h1>Templates</h1>
     <div class="container">
-      <div class="template"></div>
-      <div class="template"></div>
-      <div class="template"></div>
+      <div class="template">
+        <h1>Coming Soon...</h1>
+        <div class="overlay"></div>
+      </div>
+      <div class="template simple" @click="getStarted" role="link">
+        <div class="overlay"></div>
+        <img src="../assets/images/simple.png" alt="" />
+      </div>
+      <div class="template">
+        <h1>Coming Soon...</h1>
+        <div class="overlay"></div>
+      </div>
     </div>
   </section>
   <footer>

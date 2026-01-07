@@ -285,17 +285,7 @@
                 v-for="(skill, index) in resume.skills"
                 :key="index"
               >
-                <h4
-                  v-if="skill.skill"
-                  :style="{
-                    color: 'gray',
-                    fontWeight: 500,
-                    letterSpacing: '-1px',
-                    fontSize: '14px',
-                  }"
-                >
-                  • {{ skill.skill }}
-                </h4>
+                <h4 v-if="skill.skill" class="ss">• {{ skill.skill }}</h4>
               </div>
             </div>
 

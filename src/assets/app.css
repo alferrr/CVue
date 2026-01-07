@@ -326,6 +326,14 @@ button {
                 font-weight: 400;
               }
             }
+
+            .ss {
+              color: gray;
+
+              font-weight: 500;
+              letter-spacing: -1px;
+              font-size: 14px;
+            }
             p {
               font-size: 12px;
               font-weight: 600;
@@ -415,6 +423,64 @@ button {
 
     .preview {
       width: 100%;
+      .paper {
+        padding: 1.5rem 1rem;
+        header {
+          .left {
+            width: 60%;
+            h1 {
+              font-size: 14px;
+            }
+            p {
+              font-size: 8px;
+            }
+          }
+
+          .right {
+            width: 40%;
+            font-size: 8px;
+          }
+        }
+
+        .content {
+          main {
+            width: 60%;
+          }
+
+          aside {
+            width: 40%;
+          }
+
+          .block {
+            padding-top: 8px;
+            gap: 8px;
+
+            h2 {
+              font-size: 8px;
+            }
+
+            .item {
+              gap: 2px;
+
+              h4 {
+                font-size: 8px;
+              }
+
+              .ss {
+                color: gray;
+
+                font-weight: 500;
+                letter-spacing: -1px;
+                font-size: 8px;
+              }
+
+              p {
+                font-size: 4px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

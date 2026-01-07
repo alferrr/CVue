@@ -482,8 +482,13 @@ button {
 
     footer {
       flex-direction: column;
-      align-items: start;
+      align-items: center;
       gap: 3em;
+
+      span {
+        flex-direction: column;
+        align-items: center;
+      }
       .line {
         display: none;
       }
